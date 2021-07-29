@@ -17,10 +17,13 @@
 
 
 .horizontal-list li a{
-	display: inline-block;
+	display: block;
+	text-align: center;
     color: white;
     text-decoration: none;
 }
+
+
 
 
 
