@@ -1,7 +1,7 @@
 body{
 	background-color: #0c1027 ;
 	font-size: 30px;
-	margin: 15px;
+	margin: 4.5%;
 	font-family: sans-serif;
     /*position: relative;*/
 }
@@ -12,62 +12,77 @@ body::-webkit-scrollbar {            /*  ---------------------------------------
 
 
 
-
-/* --  navigation-menu Class -- */
-
-
+/*---  Navigation  ---*/
 nav{
-    padding: 10px 40px 10px 70px;
-    border: 2px solid white;
-
-    position: fixed;
-    width: 90%;
-  
+	height: 8vh;
+	margin: 10px;
+	padding: 10px 40px 10px 70px;
+	overflow: hidden;
+	
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	align-items: center;
+		
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	
+	border: 2px solid white;
 }
 
-nav ul{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-}
 
-
+/*Logo*/
 #logo-container{
-    flex: 1;
-    font-size: 30px;
-    font-weight: 700;
+	height: inherit;
+	width: 20%;	
+	font-size: 1.2rem;
+	font-weight: 300
+	line-height: 1.5;
+	color: white;
+	border: 2px solid darkred;
 }
-
 
 #logo-container img{
-	height: 60px	;
-	display: inline-block;
-
+	height: 70px;
+	width: auto;	
 }
 
 
-.nav-menu li a{
+/*Menu*/
+#menu{
+	height: auto;
+	width: 10%;
+	border: 2px solid darkred;
+}
 
-	font-size: 1.1rem;
+
+#menu a{
+	text-decoration: none;
+	font-size: 1.3rem;
 	color: #fdfdfd;
     transition: color 0.5s, border-bottom 4s, font-size 0.2s;                  
 }
 
-.nav-menu li a:hover{
+#menu a:hover{
 	color: lightgrey;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 }
 
 
-#search-form-container{  
-    width: 25%;
-    background-color: #12193e;
+/*Search-form-container*/
+#search-form-container{
+	height: 45px;
+	width: 500px;
+	border: 2px solid darkred;
+	background-color: #12193e;
     border-radius: 10px;
     /*box-shadow: 0px 0px 6px 4px #12193e;*/                                    /**********************************************/
-    max-width: 25%;
     padding: 0.1rem;
 }
+
+
 
 #search-form-container input {
     max-width: 70%;
@@ -94,6 +109,10 @@ nav ul{
     padding: 0.8em 0.8em 0.78em;
 }
 
+#notification button[type="submit"]{
+	font-size: 1.3rem;
+}
+
 #search-form-container button:hover,
  #notification button:hover{
     border-radius: 50%;
@@ -109,7 +128,27 @@ button:focus {
 }
 
 
+#notification::after {                      /*-------------------------------------------*/
+    content: '';
+    position: sticky;
+  	
+    /*left: 5%;*/
+
+    width: 7px;
+    height: 7px;
+    background-color: red;
+    
+    border-radius: 50%;
+    z-index: 5;
+}
+
+
+
+/*profile-pic*/
 #profile-pic{
+	height: 70px;
+
+	border: 2px solid darkred;
     height: 60px;
     border-radius: 50%;
 }
@@ -121,30 +160,59 @@ button:focus {
 
 
 
-
-
-/*  ----   MAIN    ----*/
+/*-- Main + Aside - Container  -- */
 #main-aside-container{
-    /*position: relative;
-    top: 10rem;
-    margin: 2rem;*/
-
-    margin: 10rem;
+	height: 1000px;
+	border: 2px solid whitesmoke;
+	margin-top: 10rem;
+	box-sizing: border-box;
 }
 
+
+
+/*---  Main  ---*/
 main{
-    display: inline-block;
-    width: 70%;
-    height: 1000px;
-
-    border: 2px solid white ;
-
+	display: inline-block;
+	height: inherit;
+	width: 68%;
+	/*overflow: scroll;*/
+	border: 2px solid red;
 }
 
+/*main::-webkit-scrollbar {            
+    display: none; 
+}
+*/
 
 aside{
-    display: inline-block;
-    border: 2px solid white ;
-    width: 25%;
-    height: 1000px; 
+	display: inline-block;
+	height: inherit;
+	width: 30%;
+	border: 2px solid green;
 }
+
+
+
+
+/*
+#carousel-container{
+    height: 40vh;
+    border: 2px solid white ;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+#carousel-container img{
+    height: auto;
+    width:20vw;
+
+    
+    
+    transition: all 0.8s;
+}
+
+#carousel-container img:hover{
+    transform: scale(1.3);
+}*/
