@@ -254,11 +254,11 @@ main{
 
 
 #card-container{
-	width: 100%;
+	width: 95%;
 	height: auto;
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-evenly;
+	justify-content: space-between;
 	align-items: center;
 
 	border: 2px solid red;
@@ -268,8 +268,8 @@ main{
 .card{
 
 	width: 47%;
-	margin: 5px 5px;
-	height: 100px;
+	margin: 10px 5px;
+	height: 140px;
 
 	display: flex;
 	flex-wrap: wrap;
@@ -277,29 +277,48 @@ main{
 	border: 2px greenyellow solid;
 
 	/*overflow: hidden;*/
-	min-width: 280px;
+	min-width: 320px;
+
+	position: relative;
 }
 
+.latest-release-image-container{
+	height: inherit;
+	width: 140px;
+}
 
 .card img{
-	height: inherit;
-	width: 100px;
+	height: 100%;
+	width: 100%;
 }
 
-.card img:hover{
-	opacity: 0.6;
+.latest-release-image-container:hover{
+	opacity: 0.7;
+}
+
+
+.latest-release-image-container>i{
+	position: absolute;
+	left: 60px;
+	top: 50%;
+	opacity: 0;                           
+}
+
+.latest-release-image-container:hover .play-button{
+	opacity: 1;
+	color: white;
+	z-index: 3;
 }
 
 
 .song-desc{
-	font-size: 1.5rem;
-
-	line-height: ;
+	font-size: 1.3rem;
+	line-height: 1.5 ;
 	margin: auto 10%;
 }
 
 .song-desc span{
-	font-size: 1.2rem;
+	font-size: 1rem;
 	color: var(--secondary-text-color);
 }
 
@@ -320,7 +339,8 @@ main{
 
 
 
-/*--  Section 3 - Popular Artists  --*/
+/*-------               Section 3 - Popular Artists       ------------*/
+
 
 #popular-artists{
 	width: 100%;
