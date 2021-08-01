@@ -65,11 +65,11 @@ aside::-webkit-scrollbar{
     width: auto;
     font-family: var(--section-heading-font-family);
     font-weight: lighter;
-    margin: 1rem;
+    margin: 0.2rem;
 }
 
 .section-heading span {
-    font-size: 2rem;
+    font-size: 1.7rem;
     color: var(--section-heading-color);
     display: inline-block;
 }
