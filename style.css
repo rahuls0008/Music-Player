@@ -184,7 +184,7 @@ button:focus {
 main{
 	display: inline-block;
 	height: inherit;
-	width: 68%;
+	width: 75%;
 	padding: 4%;
 	padding-top: 6%;	
 	
@@ -561,15 +561,112 @@ main{
 
 
 
+/* ---------       Section 5 - Moods  ---------------*/ 
+#moods{
+	width: 100%;
+	margin-top: 3rem;	
+	
+
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+
+	border: 2px solid yellow;
+}
+
+
+.outer-div{
+	width: 32%;
+	height: 14rem;
+	position: relative;
+	overflow: hidden;
+}
+
+.mood{
+	width: 100%;
+	height: inherit;
+	position: relative;	
+}
+
+.mood img{
+	width: 100%;
+	height: 100%;
+	opacity: 0.6;
+}
+
+.mood p{
+	position: absolute;
+	top: 25%;
+	left: 28%;
+	color: white;
+	transition:	all 0.4s ease-in-out ;
+
+}
+
+.mood{
+	background-position: center;
+	background-size: cover;
+	transition:	all 0.4s ease-in-out ;
+}
+
+/* Zoom in on hover  */
+.mood:hover{
+	transform: scale(1.2);
+}
+
+/* Decrease font size on hover */
+.mood:hover p{
+	transform: scale(0.75);
+}
+
+
+/*Blending Gradient over image (make image opacity to 0.8)  */
+
+#mood2{
+	background-color: #8EC5FC;
+	background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+	background-blend-mode: hard-light;
+}
+
+
+#mood1{
+	background-color: #FBAB7E;
+	background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
+
+	background-blend-mode: hard-light;
+}
+
+#mood3{
+	background-color: #FFE53B;
+	background-image: linear-gradient(147deg, #FFE53B 0%, #FF2525 74%);
+	background-blend-mode: hard-light;
+}
 
 
 
+
+
+/* ---------       Section 6 - Latest English  ---------------*/ 
+
+
+
+
+
+
+
+
+
+
+
+
+/* ---------       Section 7 - Latest English  ---------------*/ 
 
 /*--- Aside Section ---*/
 aside{
 	display: inline-block;
 	height: inherit;
-	width: 30%;
+	width: 22%;
 	border: 2px solid green;
 
 	box-sizing: border-box;
