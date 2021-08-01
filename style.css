@@ -2,7 +2,9 @@ body{
 	background-color: var(--primary-color) ;
 	font-size: 30px;
 	margin: 4.5%;
-	font-family: sans-serif;
+	font-family: var(--primary-font-family);
+	color: var(--primary-text-color);
+/*	font-weight: lighter; */                              /*-----------------------*/
     /*position: relative;*/
 }
 
@@ -58,14 +60,14 @@ nav{
 
 #menu a{
 	text-decoration: none;
-	font-size: 1.3rem;
+	font-size: 1.2rem;
 	color: #fdfdfd;
     transition: color 0.5s, border-bottom 4s, font-size 0.2s;                  
 }
 
 #menu a:hover{
 	color: lightgrey;
-    font-size: 1.1rem;
+    font-size: 1.5rem;
 }
 
 
@@ -166,6 +168,9 @@ button:focus {
 	margin-top: 10rem;
 
 	box-sizing: border-box;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
 }
 
 
@@ -198,7 +203,7 @@ main{
 	width: 100%;
 	
 	border: 2px solid yellow;
-
+	margin-bottom: 10%;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
@@ -242,11 +247,127 @@ main{
 
 
 /*Section 2 - Latest Release*/
+#latest-release{
+	width: 100%;
+	border: 2px solid yellow;
+}
+
+
+#card-container{
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	align-items: center;
+
+	border: 2px solid red;
+}
+
+
+.card{
+
+	width: 47%;
+	margin: 5px 5px;
+	height: 100px;
+
+	display: flex;
+	flex-wrap: wrap;
+	box-sizing: border-box;
+	border: 2px greenyellow solid;
+
+	/*overflow: hidden;*/
+	min-width: 280px;
+}
+
+
+.card img{
+	height: inherit;
+	width: 100px;
+}
+
+.card img:hover{
+	opacity: 0.6;
+}
+
+
+.song-desc{
+	font-size: 1.5rem;
+
+	line-height: ;
+	margin: auto 10%;
+}
+
+.song-desc span{
+	font-size: 1.2rem;
+	color: var(--secondary-text-color);
+}
+
+.dropdown-menu{
+	
+	font-size: 1.2rem;
+	color: var(--secondary-text-color);
+
+	position: relative;
+	text-align: right;
+	line-height: 0.5;
+	margin-left: auto;
+	margin-right: 2%;
+	margin-top: 2%;
+}
 
 
 
 
 
+/*--  Section 3 - Popular Artists  --*/
+
+#popular-artists{
+	width: 100%;
+	border: 2px solid yellow;
+
+	box-sizing: border-box;
+}
+
+
+#artists-container{
+	width: 100%;
+	height: auto;
+
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	align-items: center;
+
+	border: 2px solid red;
+}
+
+#artists-container div{
+	height: 200px;
+	padding: 5px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+#artists-container div span{
+	font-size: 1.1rem;
+	color: var( --secondary-text-color);
+}
+
+
+
+#artists-container img{
+	height: 150px;
+	width: 150px;
+	border-radius: 50%;
+}
+
+
+
+
+/*--- Aside Section ---*/
 
 aside{
 	display: inline-block;
