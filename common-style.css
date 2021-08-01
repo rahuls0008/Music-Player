@@ -25,6 +25,10 @@ aside::-webkit-scrollbar{
     --primary-font-family: sans-serif;
     --secondary-font-family: sans-serif;
 
+    /*--music-theme-background-color: linear-gradient(90deg, #833ab4, #fd1d1d, #fcb045);*/
+    --music-theme-background-color: lightgrey;
+    --music-theme-border-color:  #13386fe0;
+
 }
 
 
@@ -32,6 +36,10 @@ aside::-webkit-scrollbar{
 
 /*--- Common Classes  ---  */
 
+.normal-shadow {
+  background: hotpink;
+  box-shadow: 5px 5px 10px  white;
+}
 
 
 /* Common Margin Classes */
@@ -159,21 +167,3 @@ aside::-webkit-scrollbar{
 
 
 
-/*
-
-.fa-ellipsis-h {
-    cursor: pointer;
-}
-
-*/
-/* this input is for the latest release drop down */
-input[type="checkbox"] {
-    display: none;
-}
- /*checking it, will trigger the latest release dropdown */
-/*input[type="checkbox"]:checked ~ .dropdown-list{
-    width: max-content;
-    height: auto;
-    opacity: 1;
-    padding: 5px;
-}*/
