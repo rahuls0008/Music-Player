@@ -18,12 +18,13 @@ aside::-webkit-scrollbar{
 
     --primary-text-color: #ffffff;
     --secondary-text-color: lightgrey;
-
+    --section-heading-color: rgb(222, 222, 222);
+    
     --dropdown-background-color: #ffffff;
     --dropdown-text-color: #13386fe0;
     --dropdown-underline-color: red;
-    --primary-font-family: sans-serif;
-    --secondary-font-family: sans-serif;
+    --primary-font-family: Roboto,sans-serif;
+    --secondary-font-family: Roboto,sans-serif;
 
     /*--music-theme-background-color: linear-gradient(90deg, #833ab4, #fd1d1d, #fcb045);*/
     --music-theme-background-color: lightgrey;
