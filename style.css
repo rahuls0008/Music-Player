@@ -1,6 +1,6 @@
 body{
 	background-color: var(--primary-color) ;
-	font-size: 30px;
+	font-size: 25px;
 	margin: 4.5%;
 	font-family: var(--primary-font-family);
 	color: var(--primary-text-color);
@@ -663,31 +663,39 @@ main{
 .trending-song-container{
 	height: auto ;
 	width: 100%;
-	margin-top: 1rem;
+	
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-between;
+	justify-content: space-around;
 	align-items: center;
 
 	border: 2px solid green;
 }
 
 .song{
-	height: 140px;
-	width: 140px;
+	height: auto;
+	width: 16%;
+	padding: 6px;
 /*	display: flex;
 	flex-wrap: wrap;*/
 	text-align: center;
 
 	border: 2px solid yell;
-
+	box-sizing: border-box;
+	
 }
 
+
 .song img{
-	height: inherit;
+	height: 180px;
 	width: 100%;
 
-	border-radius: 6px ;
+
+	transition: box-shadow ease-in-out 0.1s;
+}
+
+.song img:hover{
+	box-shadow: 0px 0px 10px 1px white;
 }
 
 .song p{
@@ -705,7 +713,7 @@ main{
 
 /* ---------       Section 7 - Trending Hindi  ---------------*/ 
 #trending-hindi{
-	margin-top: 4rem;
+	margin-top: 3rem;
 	width: 100%;
 	height: auto;
 	box-sizing: border-box;
@@ -719,20 +727,7 @@ main{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*--- Aside Section ---*/
+/*--------------------------      Aside Section     ---------------------------------------*/
 aside{
 	display: inline-block;
 	height: inherit;
@@ -749,4 +744,208 @@ aside{
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*--------------          Footer   -  Bottom Music Player    ---------------------*/
+
+footer{
+	height: 9vh;
+	width: 100%;
+	border: 2px solid red;
+	/*background-color: var(--music-player-bar-background-color);*/
+	/*background-color: #130200;
+	background-image: linear-gradient(19deg, #130200 0%, #DDD6F3 100%);*/
+
+	background-color: rgba(32, 36, 44, 0.9);
+	background-blend-mode: lighten;
+
+	box-sizing: border-box;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+
+
+
+/*--------  Music Player Bar -----------*/
+#music-player-bar{
+	width: 80%;
+	height: 95%;
+
+	border: 4px solid black;
+	/*background-color: var(--music-player-bar-background-color);*/
+
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	
+	box-sizing: border-box;
+}
+
+
+/* current song */
+#current-song{
+	width: 25%;
+	height: inherit;
+	border: 4px solid yellowgreen;
+
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+	box-sizing: border-box;
+}
+
+.current-song-image-container{
+	height: 100%;
+	weight: 80px;
+}
+
+#current-song img{
+	height: 100%;
+	width: 100%;
+}
+
+.current-song-desc{
+	width: 50%;
+	border: 2px solid darkred;
+	overflow: hidden;
+}
+
+.current-song-desc p{
+	font-size: 1.1rem;
+	line-height: 1.3;
+	margin: auto 10%;
+}
+
+.current-song-desc span{
+	font-size: 1rem;
+	color: var(--secondary-text-color);
+}
+
+.current-song-icon{
+	position: relative;
+	bottom: 25%;	
+}
+
+
+.current-song-icon i{
+	font-size: 1.2rem;
+	color: var(--secondary-text-color);
+	margin: 6px;
+}
+
+
+/* Audio Controls */
+#audio-control{
+	height: 55%;
+	width: 40%;
+	border: 4px solid red;
+	
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	box-sizing: border-box;
+	background: rgba(241, 243, 244, 0.7);
+
+}
+
+
+#audio-control audio{
+	width: 80%;
+	height: 80%;
+	font-size: 1.5rem;
+	outline: none;
+
+	background-color: white;
+	border-right: 4px solid #242425;
+	border-left: 4px solid #242425;
+	/*border: 2px solid red;*/
+	/*transform: scale(1.2);*/
+
+	transform: scale(1.2);
+	margin-left: 2rem;
+	margin-right: 2rem;
+	opacity: 0.8;
+
+}
+
+
+
+#audio-control i{
+	color: #242425;
+	font-size: 1.3rem;
+	margin: 1.3rem;
+}
+
+
+
+
+/* Audio Quality & Queue  */
+#more{
+	width: 15%;
+	height: inherit;
+	border: 2px solid darkred;
+
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+
+	box-sizing: border-box;
+	position: relative;
+}
+
+#more i{
+	color: var(--secondary-text-color);
+	font-size: 1.2rem;
+	margin: 1.3rem;
+}
+
+
+#more p{
+	color: var(--primary-text-color);
+	font-size: 1.2rem;
+	padding: 5px;
+
+	border-radius: 4rem;
+
+	min-width: 100px;
+}
+
+
+
+/* Expand  */
+#expand{
+	height: 100%;	
+	position: relative;
+	right: 0;
+	
+	border-left: 4px solid black;
+}
+
+
+#expand i{
+	color: var(--primary-text-color);
+	font-size: 1.8rem;
+	margin: 1.2rem;
+}
 

@@ -30,6 +30,10 @@ aside::-webkit-scrollbar{
     --music-theme-background-color: lightgrey;
     --music-theme-border-color:  #13386fe0;
 
+
+    --music-player-bar-background-color: ;
+
+    --black-shade-1: border-right: 2px solid #242425;;
 }
 
 
@@ -74,7 +78,7 @@ aside::-webkit-scrollbar{
     width: auto;
     font-family: var(--section-heading-font-family);
     font-weight: lighter;
-    margin: 0.2rem;
+    margin: 0rem;
 }
 
 .section-heading span {
@@ -164,6 +168,15 @@ aside::-webkit-scrollbar{
     position: absolute;
     right: 3%;
 }
+
+
+
+
+
+
+
+
+
 
 
 
