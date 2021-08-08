@@ -1,7 +1,7 @@
 body{
 	background-color: var(--primary-color) ;
 	font-size: 25px;
-	margin: 4.5%;
+
 	font-family: var(--primary-font-family);
 	color: var(--primary-text-color);
 /*	font-weight: lighter; */                                   /*-----------------------*/
@@ -18,47 +18,78 @@ body{
 
 /*-------             Navigation Bar              ---------*/
 nav{
-	height: 8vh;
-	margin: 10px;
-	padding: 10px 40px 10px 70px;
+	height: 85px;
+	min-height: 80px;
 	overflow: hidden;
+	padding-top: 1vh;
+	padding-bottom: 1vh;
 	
+	box-sizing: border-box;
+
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-evenly;
+	justify-content: space-around;
 	align-items: center;
 		
 	position: fixed;
 	top: 0;
 	right: 0;
 	left: 0;
+
+	background-color: var(--primary-nav-color);
+	z-index: 1000;
 	
 	border: 2px solid white;
+	transition: all 1s ease-in-out;
+}
+
+
+nav:hover{
+	border-bottom: 2px solid orange;
 }
 
 
 /*-- Logo  --*/
 #logo-container{
-	height: inherit;
-	width: 20%;	
-	font-size: 1.2rem;
-	font-weight: 300
-	line-height: 1.5;
-	color: white;
-	border: 2px solid darkred;
+	height: 100%;
+	width: 15%;	
+
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	align-items: center;
 }
 
-#logo-container img{
-	height: 70px;
+#logo-container div{
+	height: 95%;
 	width: auto;	
 }
 
 
+
+
+#logo-container div img{
+	height: 95%;
+	width: auto;
+}
+
+
+#logo-container a{
+	font-size: 1.2rem;
+	font-weight: 300
+	line-height: 1.5;
+	color: white;
+	text-decoration: none;
+}
+
+#logo-container span{
+	color: Orange;
+}
+
 /*-- Menu  --*/
 #menu{
 	height: auto;
-	width: 10%;
-	border: 2px solid darkred;
+	width: auto;
 }
 
 
@@ -66,41 +97,51 @@ nav{
 	text-decoration: none;
 	font-size: 1.2rem;
 	color: #fdfdfd;
-    transition: color 0.5s, border-bottom 4s, font-size 0.2s;                  
+    transition: all 1s ease-in-out;                 
 }
 
 #menu a:hover{
 	color: lightgrey;
-    font-size: 1.5rem;
+    border-bottom: 2px solid orange;
 }
 
 
 /*-- Search-form-container --*/
 #search-form-container{
-	height: 45px;
-	width: 500px;
-	border: 2px solid darkred;
-	background-color: var(--secondary-color);
-    border-radius: 10px;
+	height: 60%;
+	width: 25%;
+
+	background-color: var(--secondary-nav-color);
+    border-radius: 15px;
     /*box-shadow: 0px 0px 6px 4px #12193e;*/                                    /**********************************************/
     padding: 0.1rem;
+
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    overflow: hidden;
 }
 
 
 
-#search-form-container input {
-    max-width: 70%;
+#search-form-container input{
     padding: 4px 10px;
 
     border: 0px solid transparent;
 
     color: #d9dcdd;
     background: transparent;
-    width: 90%;
+  
     line-height: 1.6;
     font-size: 1.05rem;
 }
 
+
+#text-area{
+    width: 65%;	
+}
 
 #search-form-container button[type="submit"],
 #notification button[type="submit"]{
@@ -114,7 +155,7 @@ nav{
 }
 
 #notification button[type="submit"]{
-	font-size: 1.3rem;
+	font-size: 1.2rem;
 }
 
 #search-form-container button:hover,
@@ -133,10 +174,15 @@ button:focus {
 
 
 /*--  Notification  --*/
+#notification{
+	position: relative;
+}
+
 #notification::after {                      /*-------------------------------------------*/
     content: '';
-    position: sticky;
-  	
+    position: absolute;
+  	top: 15px;
+  	right: 11px;
     /*left: 5%;*/
 
     width: 7px;
@@ -144,16 +190,14 @@ button:focus {
     background-color: red;
     
     border-radius: 50%;
-    z-index: 5;
+    z-index: 2000;
 }
 
 
 
 /*-- profile-pic   --*/
 #profile-pic{
-	height: 70px;
-
-	border: 2px solid darkred;
+	height: 80%;
     height: 60px;
     border-radius: 50%;
 
@@ -168,10 +212,17 @@ button:focus {
 
 /*-------------                         Main + Aside  Container          -------------- */
 #main-aside-container{
-	height: 1000px;
-	border: 2px solid whitesmoke;
-	margin-top: 10rem;
+	height: 100%;
+	position: fixed;
+	top: 11vh;
+	left: 5%;
+	right: 5%;
 
+	margin-left: auto;
+	margin-right: auto;
+	border: 2px solid whitesmoke;
+	
+	width: 90%;
 	box-sizing: border-box;
 	display: flex;
 	flex-wrap: wrap;
@@ -186,7 +237,8 @@ main{
 	height: inherit;
 	width: 75%;
 	padding: 4%;
-	padding-top: 6%;	
+	padding-top: 6%;
+	padding-bottom: 12%;	
 	
 	border: 2px solid red;
 	overflow: scroll;
@@ -207,9 +259,7 @@ main{
 /*------      Section 1 - Carousel          -------*/
 #carousel{
 	width: 100%;
-	
-	border: 2px solid yellow;
-	margin-bottom: 10%;
+	margin-bottom: 9%;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
@@ -222,7 +272,7 @@ main{
 #carousel div{
 	height: 35vh;
 	width: 32%;
-	border: 2px solid white;
+		/*border: 2px solid white;*/
 	
 	transition: all ease-in-out 0.4s;
 }
@@ -240,7 +290,7 @@ main{
 
 /* size of all div decreases when hovered on parent div(carousel)  */
 #carousel:hover > div{
-	opacity: 0.6;
+	opacity: 0.5;
 	transform: scale(0.8);	
 }
 
@@ -249,7 +299,7 @@ main{
 /* - This gives effet that the hovered div size increases & rest of the div size decreases */
 #carousel:hover > div:hover{
 	opacity: 1.0;
-	transform: scale(1.5);
+	transform: scale(1.4);
 	z-index: 3;
 }
 
@@ -261,7 +311,7 @@ main{
 /*------                Section 2 - Latest Release                ---------*/
 #latest-release{
 	width: 100%;
-	border: 2px solid yellow;
+	/*border: 2px solid yellow;*/
 }
 
 
@@ -272,48 +322,45 @@ main{
 	flex-wrap: wrap;
 	justify-content: space-around;
 	align-items: center;
-	margin-left: -1.5%;
-	border: 2px solid red;
+	margin-left: -1%;
 }
 
 
 .card{
-	width: 47%;
-	margin: 10px 5px;
-	height: 140px;
+	width: 46%;
+	margin: 9px 5px;
+	height: 15vh;
 
 	display: flex;
 	flex-wrap: wrap;
 	box-sizing: border-box;
-	border: 2px greenyellow solid;
 
 	/*overflow: hidden;*/
 	min-width: 320px;
-
 	position: relative;
 }
 
 
 .latest-release-image-container{
 	height: inherit;
-	width: 140px;
+	width: 15vh;
 }
 
 .card img{
 	height: 100%;
-	width: 100%;
+	width: 15vh;
 }
 
 .latest-release-image-container:hover{
-	opacity: 0.7;
+	opacity: 0.6;
 }
 
 
 /* Play button appearing on hover  */
 .latest-release-image-container i{
 	position: absolute;
-	left: 60px;
-	top: 45%;
+	left: 6vh;
+	top: 42%;
 	opacity: 0;                          
 }
 
@@ -327,28 +374,32 @@ main{
 
 /*song desc*/
 .song-desc{
-	font-size: 1.3rem;
-	line-height: 1.5 ;
+	font-size: 1.1rem;
+	line-height: 1.4;
 	margin: auto 10%;
 }
 
 .song-desc span{
-	font-size: 1rem;
+	font-size: 0.9rem;
 	color: var(--secondary-text-color);
 }
 
 
 /* dropdown menu */  /* - more related classes in common-styles.css  */
 .dropdown-menu{
-	font-size: 1.2rem;
+	font-size: 1rem;
 	color: var(--secondary-text-color);
 
 	position: relative;
 	text-align: right;
-	line-height: 0.5;
+	line-height: 0;
 	margin-left: auto;
 	margin-right: 2%;
 	margin-top: 2%;
+}
+
+.dropdown-menu p{
+	font-size: 0.2rem;
 }
 
 
@@ -359,8 +410,7 @@ main{
 /*---------               Section 3 - Popular Artists       ------------*/
 #popular-artists{
 	width: 100%;
-	border: 2px solid yellow;
-	margin-top: 3rem;
+	margin-top: 2.1rem;
 	box-sizing: border-box;
 }
 
@@ -368,19 +418,17 @@ main{
 #artists-container{
 	width: 100%;
 	height: auto;
-
+	margin-top: 0.8vh;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
 
 	align-items: center;
-
-	border: 2px solid red;
 }
 
 #artists-container div{
-	height: 190px;
-	margin: 4px;
+	height: auto;
+
 	display: flex;
 	flex-direction: column;
 	justify-content: space-evenly;
@@ -390,13 +438,15 @@ main{
 #artists-container div span{
 	font-size: 1rem;
 	color: var( --secondary-text-color);
+	margin-top: 0.8vh;
+	margin-bottom: 1.4vh;
 }
 
 
 
 #artists-container img{
-	height: 140px;
-	width: 140px;
+	height: 18vh;
+	width: 18vh;
 	border-radius: 50%;	
 	box-shadow: 2px 2px 2px px black;
 }
@@ -413,8 +463,8 @@ main{
 /* play-button appears on hover  */
 .artist > a{
 	position: absolute;
-	left: 60px;
-	top: 65px;
+	left: 7.5vh;
+	top: 7vh;
 	opacity: 0;  
 	color: white;                         
 }
@@ -449,16 +499,16 @@ main{
 
 	/*background-image: var(--music-themes-background-image);*/
 	background-color: var(--music-theme-background-color);
-	border: 4px solid var(--music-theme-border-color);
+	/*border-right: 4px solid var(--music-theme-border-color);*/
 }
 
 
 /* Creating Stations Block by placing div over div  */
 #station-container{
 	width: 30%;
-	height: 15rem;
+	height: 30vh;
 	/*margin: 20px;*/
-	border: 2px solid var(--music-theme-border-color);
+	/*border-right: 2px solid var(--music-theme-border-color);*/
 
 	position: relative;
 
@@ -466,6 +516,8 @@ main{
 	flex-wrap: wrap;
 	justify-content: space-around;
 	align-items: center;
+
+	min-width: 180px;
 }
 
 #div1{
@@ -473,15 +525,10 @@ main{
 	height: 60%;
 	background-color: #ff3b3b;
 	background-image: linear-gradient(147deg, #ff3b3b 0%, #FF2525 74%);
-
-
 	position:absolute ;
 }
 
 #div2 {
-/*	position: relative;
-	top: -1vw;
-	left: 1vw;*/
 	width: 75%;
 	height: 75%;
 	position: absolute;
@@ -497,9 +544,12 @@ main{
 
 	background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(255,209,67,1) 0%, rgba(255,145,83,1) 90% );
 	display: flex;
+	flex-wrap: wrap;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+
+	overflow: hidden;
 }
 
 #div3 img {
@@ -508,8 +558,8 @@ main{
 }
 
 #div3 p {
-	font-size: 2rem;
-	font-weight: 500;
+	font-size: 1.6rem;
+	font-weight: 550;
 	color: brown;
 }
 
@@ -518,7 +568,6 @@ main{
 #theme-container{
 	width: 65%;
 	height: inherit;
-	border: 2px solid red;
 
 	display: flex;
 	flex-wrap: wrap;
@@ -531,19 +580,18 @@ main{
 }
 
 .theme img{
-	height: 130px;
-	width: 130px;
+	height: 17vh;
+	width: 17vh;
 
 	margin: 4px;
 	border-radius: 50%;
-	border: 2px solid var(--music-theme-border-color);
-	filter: blur(0.5px);
-	opacity: 0.9;
+	/*border: 2px solid var(--music-theme-border-color);*/
+	/*filter: blur(0.5px);*/
+	opacity: 0.7;
 }
 
 /* Remove Blurr on hover  */
 .theme:hover img{
-	filter: blur(0px);
 	opacity: 1;
 }
 
@@ -553,7 +601,7 @@ main{
 	color: white;
 	position: absolute;
 	top: 20%;
-	left: 20%;
+	left: 21%;
 
 	z-index: 3;
 }
@@ -565,7 +613,7 @@ main{
 #moods{
 	width: 100%;
 	height: auto;
-	margin-top: 3rem;	
+	margin-top: 2.5rem;	
 	margin-left: -1.5%;
 	margin-right: -2%;
 
@@ -574,13 +622,12 @@ main{
 	justify-content: space-around;
 	align-items: center;
 
-	border: 2px solid yellow;
 }
 
 
 .outer-div{
 	width: 32%;
-	height: 14rem;
+	height: 28vh;
 	min-width: 230px;
 	margin: 4px;
 	position: relative;
@@ -616,12 +663,12 @@ main{
 
 /* Zoom in on hover  */
 .mood:hover{
-	transform: scale(1.2);
+	transform: scale(1.3);
 }
 
 /* Decrease font size on hover */
 .mood:hover p{
-	transform: scale(0.75);
+	transform: scale(0.8);
 }
 
 
@@ -653,7 +700,7 @@ main{
 
 /* ---------       Section 6 - Trending English  ---------------*/ 
 #trending-english{
-	margin-top: 4rem;
+	margin-top: 3rem;
 	width: 100%;
 	height: auto;
 	box-sizing: border-box;
@@ -668,8 +715,6 @@ main{
 	flex-wrap: wrap;
 	justify-content: space-around;
 	align-items: center;
-
-	border: 2px solid green;
 }
 
 .song{
@@ -687,11 +732,10 @@ main{
 
 
 .song img{
-	height: 180px;
+	height: 22vh;
 	width: 100%;
 
-
-	transition: box-shadow ease-in-out 0.1s;
+	transition: box-shadow ease-in-out 0.3s;
 }
 
 .song img:hover{
@@ -713,12 +757,10 @@ main{
 
 /* ---------       Section 7 - Trending Hindi  ---------------*/ 
 #trending-hindi{
-	margin-top: 3rem;
+	margin-top: 2rem;
 	width: 100%;
 	height: auto;
 	box-sizing: border-box;
-
-	border: 2px solid red;
 }
 
 
@@ -731,7 +773,7 @@ main{
 aside{
 	display: inline-block;
 	height: inherit;
-	width: 22%;
+	width: 23%;
 	border: 2px solid green;
 
 	box-sizing: border-box;
@@ -744,12 +786,101 @@ aside{
 
 
 
+.aside-section-heading{
+	margin-top: 5vh;
+	
+	border: 2px solid red;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.aside-section-heading span{
+	font-size: 1rem;
+	text-align: right;
+	color: var(--aside-section-more-color);
+}
+
+
+
+.song-tile-container{
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+
+	border: 4px solid black;
+}
 
 
 
 
+.song-tile{
+	width: 100%;
+	height: 10vh
+	
+	border: 2px solid green;
+
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+	box-sizing: border-box;
+}
+
+.song-tile-image-container{
+	width: 70%;
+	height: 100%;
+	/*border: 4px solid red;*/
+
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+
+}
+
+.song-tile-image-container>span{
+	font-size: 1rem;
+}
+
+.song-tile-image-container img{
+/*	height: 100%;
+	width: 100%;*/
+
+	height: 10vh;
+	weight: 80px;
+}
+
+.song-tile-desc{
+	width: 50%;
+	border: 2px solid darkred;
+	overflow: hidden;
+}
+
+.song-tile-desc p{
+	font-size: 1.1rem;
+	line-height: 1.3;
+	margin: auto 10%;
+}
+
+.song-tile-desc span{
+	font-size: 1rem;
+	color: var(--secondary-text-color);
+}
 
 
+
+
+.song-tile-icon i{
+	font-size: 1.2rem;
+	color: var(--secondary-text-color);
+	margin: 6px;
+}
 
 
 

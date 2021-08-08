@@ -15,6 +15,8 @@ aside::-webkit-scrollbar{
 :root{
     --primary-color: #0c1027;          /* Background colors */
     --secondary-color: #12193e;
+    --primary-nav-color : #0c1027;
+     --secondary-nav-color: #12193e;
 
     --primary-text-color: #ffffff;
     --secondary-text-color: lightgrey;
@@ -33,7 +35,9 @@ aside::-webkit-scrollbar{
 
     --music-player-bar-background-color: ;
 
-    --black-shade-1: border-right: 2px solid #242425;;
+    --black-shade-1: border-right: 2px solid #242425;
+
+    --aside-section-more-color: orange;
 }
 
 
@@ -82,10 +86,11 @@ aside::-webkit-scrollbar{
 }
 
 .section-heading span {
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     color: var(--section-heading-color);
     display: inline-block;
 }
+
 
 
 
@@ -168,6 +173,8 @@ aside::-webkit-scrollbar{
     position: absolute;
     right: 3%;
 }
+
+
 
 
 

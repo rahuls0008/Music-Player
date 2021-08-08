@@ -25,14 +25,17 @@
 	<!-- Navigation Bar -->
 	<nav>
 
-		<div id="logo-container">    <a href = "#">      <img  src="static/icons/favicon.png"></a>Intense Music       </div>
+		<div id="logo-container">    
+			<div> <a href = "#"> <img  src="static/icons/favicon.png"> </a>  </div> 
+			<p> <a href = "#">  Intense  <span> MUSIC</span>   </a> </p>     
+		</div>
 		
 		<div id="menu">      <a href = "#favorites">         Favourites           </a>    </div>
 		
 		<div id="search-form-container">    
-			<button class="sub-btn" type="submit"><i class="fas fa-search"></i></button>               
-            <input id="search" name="search" type="text" placeholder="Search...">              
-            <button class="sub-btn" type="submit"><i class="fas fa-microphone"></i></button>   
+			<div> <button class="sub-btn" type="submit"><i class="fas fa-search"></i></button>    </div>           
+            <div id="text-area"> <input id="search" name="search" type="text" placeholder="Search...">      </div>         
+            <div> <button class="sub-btn" type="submit"><i class="fas fa-microphone"></i></button>   </div>
         </div>
 		
 		<div id="notification">  <button class="sub-btn" type="submit"> <i class="fas fa-bell"></i> </button>  </div>
@@ -135,7 +138,7 @@
         	     	
         	     	<div class="dropdown-menu">
                     	<label for="latest-release-checkbox"> <i class="fas fa-ellipsis-h"> </i></label>
-                    	<p> 3:35  </p>
+                    	<p class="time">  3:35 </p>
 						
 						<div class ="dropdown-list">
                    			<div class="list-item">  
@@ -390,10 +393,71 @@
 	</main>
 
 	<aside>
-		<h3 class="section-heading">	<span>   My Playlist  </span>  </h3>
-			<div class="playlist-song-container">
+		<div class="aside-section-heading">	
+			<h4>   My Playlist     </h4>
+			<span> Queue  &emsp; <i class="fas fa-chevron-down"></i> </span>
+		</div>
+
+		<div class="song-tile-container">
+			<div class="song-tile">			
+				
+				<div class="song-tile-image-container">
+        	     	 	
+					  <span> 01 </span> 
+        	     	<img src="static/latest-release/You Are My High - DJ Snake.jpg">  
+        	    
+        	     	
+        	    	<P class="song-tile-desc"> Lut Gaye<br>   <span> Jubin Nautiyal </span>       </p>  
+        	   </div>
+        	     	
+        	    <div class="song-tile-icon">
+                    	<i class="far fa-heart"></i>                   								
+           		</div>
 
 			</div>
+
+			<div class="song-tile">			
+				
+				<div class="song-tile-image-container">
+        	     	 	
+					  <span> 01 </span> 
+        	     	<img src="static/latest-release/You Are My High - DJ Snake.jpg">  
+        	    
+        	     	
+        	    	<P class="song-tile-desc"> Lut Gaye<br>   <span> Jubin Nautiyal </span>       </p>  
+        	   </div>
+        	     	
+        	    <div class="song-tile-icon">
+                    	<i class="far fa-heart"></i>                   								
+           		</div>
+
+			</div>
+
+			<div class="song-tile">			
+				
+				<div class="song-tile-image-container">
+        	     	 	
+					  <span> 01 </span> 
+        	     	<img src="static/latest-release/You Are My High - DJ Snake.jpg">  
+        	    
+        	     	
+        	    	<P class="song-tile-desc"> Lut Gaye<br>   <span> Jubin Nautiyal </span>       </p>  
+        	   </div>
+        	     	
+        	    <div class="song-tile-icon">
+                    	<i class="far fa-heart"></i>                   								
+           		</div>
+
+			</div>
+
+			
+
+
+		
+
+
+		</div>
+
 		
 	</aside>
 	
