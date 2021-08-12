@@ -4,14 +4,9 @@ body{
 
 	font-family: var(--primary-font-family);
 	color: var(--primary-text-color);
-/*	font-weight: lighter; */                                   /*-----------------------*/
-    /*position: relative;*/
 
-
-
-
-  background-image: linear-gradient(to right top, #000000, #000000, #000000, #000000, #000000, #17080c, #240f14, #321219, #531721, #751b26, #972225, #b82e1f);
-  background-attachment: fixed;
+  	background-image: linear-gradient(to right top, #000000, #000000, #000000, #000000, #000000, #17080c, #240f14, #321219, #531721, #751b26, #972225, #b82e1f);
+  	background-attachment: fixed;
 
 /*   background-image: url(static/background/6.jpg);
    background-blend-mode: lighten;*/
@@ -57,7 +52,7 @@ nav:hover{
 #logo-container{
 	height: 100%;
 	width: 15%;	
-
+	min-width: 195px;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-evenly;
@@ -117,7 +112,7 @@ nav:hover{
 
 	background-color: var(--secondary-nav-color);
     border-radius: 15px;
-    /*box-shadow: 0px 0px 6px 4px #12193e;*/                                    /**********************************************/
+    /*box-shadow: 0px 0px 6px 4px #12193e;*/                                   
     padding: 0.1rem;
 
 
@@ -182,7 +177,7 @@ button:focus {
 	position: relative;
 }
 
-#notification::after {                      /*-------------------------------------------*/
+#notification::after {                    
     content: '';
     position: absolute;
   	top: 15px;
@@ -796,6 +791,9 @@ aside{
 	overflow: scroll;
 }
 
+#slider{
+	display: none;
+}
 
 /*aside section heading*/
 .aside-section-heading{
@@ -953,9 +951,9 @@ footer{
 
 /* current song */
 #current-song{
-	width: 22%;
+	width: 21%;
 	height: inherit;
-
+	min-width: 184px;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
@@ -963,11 +961,12 @@ footer{
 	box-sizing: border-box;
 
 	overflow: hidden;
+
 }
 
 .current-song-image-container{
 	height: 90%;
-	weight: 9vh;
+	width: 8vh;
 }
 
 #current-song img{
@@ -977,14 +976,14 @@ footer{
 }
 
 .current-song-desc{
-	width: 55%;
+	width: 50%;
 	overflow: hidden;
 }
 
 .current-song-desc p{
 	font-size: 1rem;
 	line-height: 1.2;
-	margin: auto 10%;
+	margin: auto;
 }
 
 .current-song-desc span{
@@ -994,7 +993,8 @@ footer{
 
 .current-song-icon{
 	position: relative;
-	bottom: 25%;	
+	top: -10%;
+	right: 0;	
 }
 
 
@@ -1018,6 +1018,9 @@ footer{
 	background: rgba(241, 243, 244, 1);
 
 	border-radius: 10%;
+
+	/*min-width: 300px;*/
+
 }
 
 
@@ -1038,6 +1041,7 @@ footer{
 	margin-right: 2rem;
 	opacity: 0.8;
 
+
 }
 
 
@@ -1051,11 +1055,12 @@ footer{
 
 
 
+
 /* Audio Quality & Queue  */
 #more{
 	width: 15%;
 	height: inherit;
-
+	min-width: 170px;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
@@ -1067,8 +1072,8 @@ footer{
 
 #more i{
 	color: var(--secondary-text-color);
-	font-size: 1rem;
-	margin: 1.3rem;
+	font-size: 0.9rem;
+	margin: 1.1rem;
 }
 
 
@@ -1090,13 +1095,13 @@ footer{
 	position: relative;
 	right: 0;
 	
-	border-left: 3px solid white;
+	border-left: 2.5px solid white;
 }
 
 
 #expand i{
 	color: var(--primary-text-color);
-	font-size: 1.5rem;
+	font-size: 1.2rem;
 	margin: 1.2rem;
 }
 

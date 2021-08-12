@@ -11,6 +11,7 @@
 	<!-- link css files -->
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="stylesheet" type="text/css" href="common-style.css">
+	<link rel="stylesheet" type="text/css" href="home-screen-responsive-design.css">
 
 	<!-- link fontawesome -->
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
@@ -49,8 +50,16 @@
 	<div id="main-aside-container">
 	
 
+	<div id="slider"> 
+<!-- 		<label for="toggle"> <span> More  </span>  <i class="fas fa-angle-double-left"></i> </label>
+		<input type="checkbox" id="toggle">   -->
+
+		<span> More  </span>  <i class="fas fa-angle-double-left"></i>
+
+	</div>
+
 	<!-- Main -->
-	<main>
+	<main class="main-section">
 		
 		<!-- Carausel -->
 		<section id="carousel">
@@ -382,17 +391,21 @@
 
 		
 
-		
-
-
-
-		
-		
-
-
 	</main>
 
-	<aside>
+	
+<!-- 
+	<div id="slider"> 
+		<label for="toggle"> <span> More  </span>  <i class="fas fa-angle-double-left"></i> </label>
+		<input type="checkbox" id="toggle">  
+
+		<span> More  </span>  <i class="fas fa-angle-double-left"></i>
+
+	</div> -->
+	
+
+	<aside class="aside-section">
+
 		<div class="aside-section-heading">	
 			<h4>   My Playlist     </h4>
 			<span> Queue  &emsp; <i class="fas fa-chevron-down"></i> </span>
@@ -566,19 +579,14 @@
            		</div>
 			</div>
 
-			
-
-
-		
-
-
 		</div>
 
 		
 	</aside>
 	
-
 	</div>
+
+
 
 
 
@@ -612,7 +620,7 @@
 				<audio controls> <source src="static/Song/ya ali.mp3" type="audio/mp3">  </audio>
 
 				<div> <i class="fas fa-step-forward"></i>  </div>
-				<div> <i class="fas fa-random"></i>   </div>				 
+				<div class="shuffle"> <i class="fas fa-random"></i>   </div>				 
 			</div>
 
 			<!-- More -->
