@@ -1,0 +1,242 @@
+
+
+/* ---------------                      BreakPoint 1 - 1200px         -----------------------*/
+@media screen and (max-width: 1200px){
+
+	/*remove menu on nav bar*/
+	#menu{
+		display: none;
+	}
+
+	.current-song-icon i{
+		display: none;
+	}
+
+}
+
+
+
+
+
+/* ---------------                      BreakPoint 2 - 900px         -----------------------*/
+@media screen and (max-width: 900px) {
+
+	#more i{
+		display: none;
+	}
+
+}
+
+
+
+
+
+
+/* ---------------                      BreakPoint 3 - 800px         -----------------------*/
+@media screen and (max-width: 800px){
+
+
+
+	/*Introduce Slider for Aside section*/
+	#slider{
+		
+		display: inline-block;
+		position: fixed;
+		right: 0;
+		top: 20vh;
+
+		width: 7%;
+		height: 60%;
+		border: 2.2px solid red;
+		border-right: none;
+
+		writing-mode: vertical-rl;
+		text-orientation: upright;
+
+		letter-spacing: -0.3rem;
+
+		text-align: center;
+
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-evenly;
+		align-items: center;
+		
+	}
+
+
+	.aside-section{
+		opacity: 0;
+		transition: all ease-in-out 0.9s;
+	}
+
+	.main-section{
+		width: 90%;
+		transition: all ease-in-out 0.9s;
+	}
+
+
+	/*make aside section appear on hover*/
+	#slider:hover + .main-section{
+		opacity: 0;
+		width: 0%;
+	}
+
+
+	#slider:hover ~ .aside-section{
+		opacity: 1;	
+		width: 80%;
+		position: relative;
+		right: 10%;
+	}
+
+
+
+	/*Music Player Bar*/
+	#more{
+		display: none;
+	}
+
+	.current-song-image-container{
+		width: 7vh;
+		height: 80%;
+	}
+
+
+	#audio-control{
+		width: 40%;
+	}
+
+
+	#audio-control audio{
+	font-size: 0.9rem;
+
+	border-right: 2px solid #242425;
+	border-left: 2px solid #242425;
+
+	transform: scale(1.2);
+	margin-left: 0.5rem;
+	margin-right: 0.5rem;
+	}
+
+
+	#audio-control i{
+		font-size: 0.9rem;
+		margin: 1rem;
+	}
+
+	#expand{
+		border-left: 2px solid white;
+	}
+
+
+	#expand i{
+		color: var(--primary-text-color);
+		font-size: 1.1rem;
+		margin: 0.5rem;
+	}
+
+}
+
+
+
+
+
+
+/* ---------------                      BreakPoint 4 - 700px         -----------------------*/
+@media screen and (max-width: 700px){
+
+	/*nav bar*/
+	#notification{
+		display: none;
+	}
+
+	#search-form-container{
+		display: none;
+	}
+
+
+
+
+	footer{
+		width: 100%;
+		left: 0%;
+		right: 0%;
+	}
+	
+
+	#current-song{
+		min-width: 140;
+	}
+
+
+	#audio-control div{
+		display: none;
+	}
+
+	#audio-control audio{
+		width: 100%;
+		font-size: 0.9rem;
+
+		border-right: 1px solid #242425;
+		border-left: 1px solid #242425;
+
+		margin-left: -10%;
+		margin-right: 0;
+
+	}
+
+
+
+	.shuffle{
+		display: inline-block;
+	}
+
+
+
+
+
+}
+
+
+
+
+
+
+/* ---------------                      BreakPoint 5 - 550px         -----------------------*/
+@media screen and (max-width: 550px){
+
+	#carousel{
+		margin-top: 10vh;
+	}
+
+
+	.current-song-desc{
+		display: none;	
+	}
+
+
+
+	#current-song{
+		min-width: auto;
+	}
+ 	
+
+
+	#audio-control audio{
+	
+	font-size: 0.9rem;
+
+
+
+	}
+
+
+
+
+	#expand i{
+		color: var(--primary-text-color);
+		font-size: 1.2rem;
+		margin: 0.8rem;
+	}
+}
