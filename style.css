@@ -38,6 +38,7 @@ nav{
 
 	z-index: 500;
 
+
 }
 
 
@@ -406,7 +407,7 @@ main{
 }
 
 .dropdown-menu p{
-	font-size: 0.2rem;
+	font-size: 0.9rem;
 }
 
 
@@ -832,7 +833,7 @@ aside{
 
 .song-tile{
 	width: 100%;
-	height: 8vh
+	height: 8vh;
 	
 	/*border: 2px solid green;           */
 
@@ -866,8 +867,8 @@ aside{
 /*	height: 100%;
 	width: 100%;*/
 
-	height: 8vh;
-	weight: 8vh;
+	height: 85%;
+	width: 6.5vh;
 	border-radius: 5px;
 }
 
@@ -877,12 +878,12 @@ aside{
 }
 
 .song-tile-desc{
-	font-size: 1.1rem;
+	font-size: 0.9rem;
 	line-height: 1.2;
 }
 
 .song-tile-desc span{
-	font-size: 0.8rem;
+	font-size: 0.7rem;
 	font-weight: lighter;
 	color: var(--secondary-text-color);
 }
@@ -954,7 +955,7 @@ footer{
 #current-song{
 	width: 21%;
 	height: inherit;
-	min-width: 184px;
+	min-width: 270px;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
@@ -982,13 +983,13 @@ footer{
 }
 
 .current-song-desc p{
-	font-size: 1rem;
+	font-size: 0.85rem;
 	line-height: 1.2;
 	margin: auto;
 }
 
 .current-song-desc span{
-	font-size: 0.8rem;
+	font-size: 0.7rem;
 	color: var(--secondary-text-color);
 }
 
@@ -1000,7 +1001,7 @@ footer{
 
 
 .current-song-icon i{
-	font-size: 1rem;
+	font-size: 0.85rem;
 	color: var(--secondary-text-color);
 	margin: 6px;
 }
@@ -1073,14 +1074,14 @@ footer{
 
 #more i{
 	color: var(--secondary-text-color);
-	font-size: 0.9rem;
+	font-size: 0.8rem;
 	margin: 1.1rem;
 }
 
 
 #more p{
 	color: var(--primary-text-color);
-	font-size: 1rem;
+	font-size: 0.9rem;
 	padding: 5px;
 
 	border-radius: 4rem;
@@ -1096,13 +1097,13 @@ footer{
 	position: relative;
 	right: 0;
 	
-	border-left: 2.5px solid white;
+	border-left: 2px solid white;
 }
 
 
 #expand i{
 	color: var(--primary-text-color);
-	font-size: 1.2rem;
+	font-size: 1.1rem;
 	margin: 1.2rem;
 }
 
