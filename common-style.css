@@ -11,7 +11,8 @@ aside::-webkit-scrollbar{
 
 
 
-/*---  CSS variables  ---*/
+/*----------------------  CSS variables  ----------------------------*/
+
 :root{
     --primary-color: #0c1027;          /* Background colors */
     --secondary-color: #12193e;
@@ -96,9 +97,6 @@ aside::-webkit-scrollbar{
 /*  ------------------ Nav Bar Drop Down Class   --------------------------------*/
 
 
-
-
-/*---------------------------------------------------------*/
 .nav-dropdown-list{
     
     height: 20vh;
@@ -200,23 +198,6 @@ aside::-webkit-scrollbar{
 
 /*  ------------------ General Drop Down Class   --------------------------------*/
 
-/*
-.dropdown-menu{
-    
-    font-size: 1.2rem;
-    color: var(--secondary-text-color);
-
-    position: relative;
-    text-align: right;
-    line-height: 1.5;
-    margin-left: auto;
-    margin-right: 2%;
-    margin-top: 2%;
-
-    /*transition: all ease-in-out 2s ;
-}
-
-*/
 
 .dropdown-menu p{
     font-size: 1rem;
@@ -287,10 +268,6 @@ aside::-webkit-scrollbar{
     min-width: 120px;
     opacity: 1;
 }
-
-
-
-
 
 
 
