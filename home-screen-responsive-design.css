@@ -12,7 +12,7 @@
 		display: none;
 	}
 
-	#carousel{
+	#carousel div{
 		min-width: 195px;
 	}
 
