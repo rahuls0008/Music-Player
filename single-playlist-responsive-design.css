@@ -45,8 +45,8 @@
 		
 		display: inline-block;
 		position: fixed;
-		right: 0;
-		top: 20vh;
+		right: -5%;
+		top: 10vh;
 
 		width: 7%;
 		height: 60%;
