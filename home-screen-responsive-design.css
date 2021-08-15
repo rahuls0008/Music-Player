@@ -1,7 +1,7 @@
 
 
 /* ---------------                      BreakPoint 1 - 1200px         -----------------------*/
-@media screen and (max-width: 1200px){
+@media screen and (max-width: 1280px){
 
 	/*remove menu on nav bar*/
 	#menu{
@@ -10,6 +10,10 @@
 
 	.current-song-icon i{
 		display: none;
+	}
+
+	#carousel{
+		min-width: 195px;
 	}
 
 }
