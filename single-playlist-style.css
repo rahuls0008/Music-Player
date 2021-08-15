@@ -223,7 +223,6 @@ button:focus {
 
 	/*background-color: var(--primary-color) ;*/
 
-	border: 2px solid yellow;
 }
 
 
@@ -248,8 +247,6 @@ main{
 	flex-wrap: wrap;
 	justify-content: center;
 	align-items: center;
-
-	border: 2px solid white;
 }
 
 
@@ -264,10 +261,6 @@ main{
 	flex-wrap: wrap;
 	justify-content: space-between;
 	align-items: center;
-
-	border: 2px solid green;
-
-
 }
 
 
@@ -296,8 +289,6 @@ main{
 	min-width: 280px;
 	box-sizing: border-box;
 
-	border: 2px solid red;
-
 	background-image: linear-gradient(to bottom right, transparent, black),linear-gradient(to bottom, transparent, #271015),url("static/Band/blackpink4.jpg");
 	background-size: cover;
 
@@ -311,9 +302,8 @@ main{
 /* Jumbotron Aside    */
 .jumbotron-aside{
 	width: 51%;
-	height: 85%;
+	height: 40vh;
 	min-width: 302px;
-	border: 2px solid red;
 
 	display: flex;
 	flex-wrap: wrap;
@@ -331,7 +321,6 @@ main{
 .jumbotron-heading{
 	height: 20%;
 	width: 100%;
-	border: 2px solid yellow;
 
 	display: flex;
 	flex-wrap: wrap;
@@ -343,7 +332,6 @@ main{
 
 .band-name{
 	height: 100%;
-	border: 2px solid green;
 }
 
 .band-name h3{
@@ -362,7 +350,6 @@ main{
 
 .followers{
 	margin-top: -8%;
-	border: 2px solid green;
 	height: inherit;
 }
 
@@ -380,7 +367,6 @@ main{
 	margin-top: 0;
 	height: auto;
 	width: 100%;
-	border: 2px solid yellow;
 	overflow: hidden;
 }
 
@@ -404,7 +390,6 @@ main{
 	margin-top: 5%;
 	height: auto;
 	width: 100%;
-	border: 2px solid yellow;
 
 	display: flex;
 	flex-wrap: wrap;
@@ -417,7 +402,6 @@ main{
 
 /* Play All Buttons   */
 .play-button{
-	border: 2px solid red;
 	width: auto;
 }
 
@@ -432,22 +416,22 @@ main{
 
 
 
+/* Gradient change effect on button*/
 .btn-grad {
-	background-image: linear-gradient(to right, #D31027 0%, #EA384D  51%, #D31027  100%);
+	background-image: linear-gradient(to right, #000000 0%, #7c1d26  51%, #000000  100%);
 }
 
 .btn-grad{
-	font-size: 0.8rem;
-	border: none;
-	margin: 0.5rem;
-	padding: 10px 45px;
+	margin: 10px;
+	padding: 15px 45px;
 	text-align: center;
 	text-transform: uppercase;
 	transition: 0.5s;
 	background-size: 200% auto;
 	color: white;            
-	box-shadow: 0 0 10px black;
+	/*box-shadow: 0 0 20px #eee;*/
 	/*border-radius: 10px;*/
+	border: none;
 	display: block;
 }
 
@@ -456,58 +440,13 @@ main{
 	color: #fff;
 	text-decoration: none;
 }
-       
-
-
-         .btn-grad {background-image: linear-gradient(to right, #870000 0%, #190A05  51%, #870000  100%)}
-         .btn-grad {
-            margin: 10px;
-            padding: 15px 45px;
-            text-align: center;
-            text-transform: uppercase;
-            transition: 0.5s;
-            background-size: 200% auto;
-            color: white;            
-            /*box-shadow: 0 0 20px #eee;*/
-            /*border-radius: 10px;*/
-            display: block;
-          }
-
-          .btn-grad:hover {
-            background-position: right center; /* change the direction of the change here */
-            color: #fff;
-            text-decoration: none;
-          }
-
-
-
-         .btn-grad {background-image: linear-gradient(to right, #000000 0%, #e74c3c  51%, #000000  100%)}
-         .btn-grad {
-            margin: 10px;
-            padding: 15px 45px;
-            text-align: center;
-            text-transform: uppercase;
-            transition: 0.5s;
-            background-size: 200% auto;
-            color: white;            
-            /*box-shadow: 0 0 20px #eee;*/
-            /*border-radius: 10px;*/
-            display: block;
-          }
-
-          .btn-grad:hover {
-            background-position: right center; /* change the direction of the change here */
-            color: #fff;
-            text-decoration: none;
-          }
          
         
 .follow-button button{
 	background: transparent;
 	border: none;
 	font-size: 1rem;
-	color: white;
-	border: 1px solid #b02b20;
+	color: white;	
 } 
          
      
@@ -518,7 +457,6 @@ main{
 
 /*-----------------------    Playlist Section  ------------------------*/ 
 #playlist-container{
-	border: 2px solid red;
 	height: auto;
 	width: 100%;
 	margin-top: 5vh;
@@ -538,8 +476,6 @@ main{
 	height: 9vh;
 	margin-bottom: 1.5vh;
 
-	border: 2px solid white;
-
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
@@ -552,8 +488,7 @@ main{
 .playlist-song-left{
 	width: 50%;
 	height: inherit;
-	border: 2px solid yellow;
-	min-width: 280px;
+	min-width: 300px;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: left;
@@ -586,7 +521,6 @@ main{
 	width: 15%;
 	height: inherit;
 	min-width: 130px;
-	border: 2px solid yellow;
 
 	display: flex;
 	flex-wrap: wrap;
@@ -602,41 +536,39 @@ main{
 }
 
 
-     .playlist-card-grad {background-image: linear-gradient(to right, #000000 0%, #38131a  51%, #000000  100%)}
-         .playlist-card-grad {
-          
-            transition: 0.7s;
-            background-size: 200% auto;
-                     
-            /*box-shadow: 0 0 20px #eee;*/
-            /*border-radius: 10px;*/
-         
-          }
+.playlist-card-grad {background-image: linear-gradient(to right, #000000 0%, #38131a  51%, #000000  100%);}
+.playlist-card-grad {
 
-          .playlist-card-grad:hover {
-            background-position: right center; /* change the direction of the change here */
-            color: #fff;
-        
-          }
+	transition: 0.7s;
+	background-size: 200% auto;
+
+	/*box-shadow: 0 0 20px #eee;*/
+	/*border-radius: 10px;*/
+
+}
+
+.playlist-card-grad:hover {
+	background-position: right center; /* change the direction of the change here */
+	color: #fff;
+
+}
+
+
 
 /*--------------------------      Aside Section     ---------------------------------------*/
 aside{
 	display: inline-block;
 	height: inherit;
 	width: 22%;
-	/*border: 2px solid green;*/
-	/*padding-top:2% ;*/
+
 	padding-bottom: 11%;
 
 	box-sizing: border-box;
 	position: relative;
 	top: 0;
 	right: 0;
-
+	border: none;
 	overflow: scroll;
-
-
-	border: 2px solid white;
 }
 
 /*aside section heading*/
@@ -672,7 +604,6 @@ aside{
 	width: 100%;
 	height: auto;
 	
-	border: 2px solid green;
 
 	display: flex;
 	flex-wrap: wrap;

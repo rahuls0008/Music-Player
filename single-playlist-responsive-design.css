@@ -25,16 +25,19 @@
 		display: none;
 	}
 
-}
+	
+	#jumbotron{
+		justify-content: space-around;
+	}
 
+	.jumbotron-image-container{
+		width: 100%;
+	}
 
-
-
-
-
-/* ---------------                      BreakPoint 3 - 800px         -----------------------*/
-@media screen and (max-width: 800px){
-
+	.jumbotron-aside{
+		width: 100%;
+		margin-top: 2vh;
+	}
 
 
 	/*Introduce Slider for Aside section*/
@@ -71,7 +74,7 @@
 	}
 
 	.main-section{
-		width: 90%;
+		width: 95%;
 		transition: all ease-in-out 0.9s;
 	}
 
@@ -90,6 +93,20 @@
 		right: 10%;
 	}
 
+
+}
+
+
+
+
+
+
+/* ---------------                      BreakPoint 3 - 800px         -----------------------*/
+@media screen and (max-width: 800px){
+
+
+
+	
 
 
 	/*Music Player Bar*/
@@ -158,6 +175,12 @@
 
 
 
+/*	.fa-plus{
+		display: none;
+	}*/
+
+
+	/*Music Player Bar */
 	footer{
 		width: 100%;
 		left: 0%;
@@ -205,10 +228,7 @@
 
 /* ---------------                      BreakPoint 5 - 550px         -----------------------*/
 @media screen and (max-width: 550px){
-
-	#carousel{
-		margin-top: 10vh;
-	}
+	
 
 
 	.current-song-desc{
@@ -239,4 +259,69 @@
 		font-size: 1.2rem;
 		margin: 0.8rem;
 	}
+}
+
+
+/* ---------------                      BreakPoint 5 - 480px   [ FOR MOBILE ]        -----------------------*/
+@media screen and (max-width: 480px){ 
+
+	
+
+	.jumbotron-aside{
+		height: 43vh;
+	}
+
+	.jumbotron-image-container{
+		width: 93%;
+	}
+
+	.jumbotron-heading{
+		height: 25%;
+	}
+
+	.followers p{
+		font-size: 0.9rem;
+	}
+
+/*	.play-button p{
+		font-size: 0.8rem;
+		margin: 0.2rem;
+		margin-bottom: 0;
+		color: var(--secondary-text-color);
+	}*/
+
+
+	/* PlayList  */
+	#playlist-container{
+		margin-bottom: 20vh;
+	}
+
+	.playlist-song-left{
+		width: 40%;
+		min-width: 230px;
+	}
+
+
+	.playlist-song-left > span{
+		font-size: 0.7rem;
+		margin-left: 0.5rem;
+		/*display: none;*/
+	}
+
+	.playlist-song-left img{
+		margin-left: 0.5rem;
+	}
+
+	.playlist-song-right{
+		min-width: 75px;
+	}
+
+	.playlist-song-right i{
+		font-size: 0.7rem;
+		margin: 0.7rem;
+	}
+
+/*	.playlist-song-right i{
+		display: none;
+	}*/
 }
