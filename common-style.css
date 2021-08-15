@@ -43,7 +43,7 @@ aside::-webkit-scrollbar{
 
 
 
-/*--- Common Classes  ---  */
+/*----------------------           Common Classes  --------------------------------  */
 
 .normal-shadow {
   background: hotpink;
@@ -77,7 +77,7 @@ aside::-webkit-scrollbar{
 }
 
 
-/*--  Section Class  --*/
+/*--------------    Section  Heading Class  ---------------------*/
 .section-heading {
     width: auto;
     font-family: var(--section-heading-font-family);
@@ -93,12 +93,112 @@ aside::-webkit-scrollbar{
 
 
 
+/*  ------------------ Nav Bar Drop Down Class   --------------------------------*/
 
 
 
 
-/
-/*  ---  Drop Down Class   ---*/
+/*---------------------------------------------------------*/
+.nav-dropdown-list{
+    
+    height: 20vh;
+    width: 350px;
+
+
+    padding: 1rem 1rem;
+
+    background-color: var(--dropdown-background-color);
+
+    position: absolute;
+    top: 1vh;
+    right: 6vh;
+   
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+    display: none;
+    overflow: hidden;
+    opacity: 0;
+
+    background-color: var(--dropdown-background-color);
+    box-shadow: 0px 4px 8px 1px black;
+    z-index: 600;
+
+
+    transition: all ease-in-out 0.5s ;
+
+}
+
+.image-div{
+    width: 40%;
+    height: inherit;
+    border: 2px solid #13386fe0;
+}
+
+.image-div img{
+    width: 100%;
+    height: 20vh;
+    /*border-radius: 0;*/
+}
+
+.list-items{
+     width: 53%;
+    height: 60%;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: stretch;
+}
+
+
+
+.nav-dropdown-list a{
+    text-decoration: none;
+    color: var(--dropdown-text-color);
+}
+
+.nav-list-item{
+    padding: 4px;
+    margin-bottom: 10px;
+    font-size: 1rem;
+    
+    text-align: left;
+    line-height: 1.5;
+
+
+    border-bottom: 2px solid var(--dropdown-underline-color);
+}
+
+.nav-list-item i{
+   color: var(--dropdown-underline-color);
+}
+
+
+
+
+#profile-pic:hover .nav-dropdown-list {
+    display:flex;
+    opacity: 1;
+}
+
+
+
+
+.list-item div{
+    height: 15vh;
+    width: 15vh;
+}
+
+.list-item div img{
+    height: 100%;
+    width: 100%;
+}
+
+/*  ------------------ General Drop Down Class   --------------------------------*/
 
 /*
 .dropdown-menu{
@@ -127,7 +227,6 @@ aside::-webkit-scrollbar{
     
     height: 0;
     width: 0;
-    
 
 
     padding: 1rem 1rem;

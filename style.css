@@ -20,7 +20,7 @@ body{
 nav{
 	height: 10vh;
 	min-height: 80px;
-	overflow: hidden;
+	/*overflow: hidden;*/
 	padding-top: 1vh;
 	padding-bottom: 1vh;
 	
@@ -57,16 +57,20 @@ nav{
 	
 	align-items: center;
 
+
+
 }
 
 #logo-container div{
 	height: 90%;
 	width: auto;
-	margin-top: -1vh;
+	/*margin-top: -1vh;*/
 
 }
 
-
+#logo-container p{
+	margin: 0;
+}
 
 
 #logo-container div img{
@@ -191,17 +195,17 @@ button:focus {
     background-color: red;
     
     border-radius: 50%;
-    z-index: 2000;
+    z-index: 5;
 }
 
 
 
 /*-- profile-pic   --*/
-#profile-pic{
+#profile-pic>img{
 	height: 80%;
     height: 60px;
     border-radius: 50%;
-
+    position: relative;
 }
 
 
